@@ -1,0 +1,144 @@
+/* Container */
+.mycars-container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+}
+
+/* Card Layout */
+.mycars-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 360px; /* Increased width */
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease-in-out;
+}
+
+.mycars-card:hover {
+  transform: scale(1.03);
+}
+
+/* Car Image */
+.mycars-image {
+  width: 100%;
+  height: 200px; /* Increased height */
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+/* Car Information */
+.mycars-info {
+  text-align: center;
+  padding: 15px 0;
+}
+
+/* Title */
+.mycars-title {
+  font-size: 22px;
+  font-weight: bold;
+  color: rgb(53, 50, 50);
+  margin-bottom: 10px;
+}
+
+/* Car Details */
+.mycars-details {
+  display: flex;
+  flex-direction: column; /* Ensures details appear in separate lines */
+  align-items: center;
+  gap: 8px;
+  font-size: 16px;
+  margin-bottom: 15px;
+}
+
+/* Small badges for fuel, mileage, transmission */
+.fuel-type,
+.mileage,
+.transmission {
+  background: #f3f3f3;
+  padding: 6px 12px;
+  border-radius: 5px;
+  font-size: 14px;
+  font-weight: bold;
+  width: 80%;
+  text-align: center;
+}
+
+/* Price */
+.mycars-price {
+  font-size: 20px;
+  font-weight: bold;
+  color: rgb(93, 93, 97);
+  margin: 12px 0;
+}
+
+/* Status Badge */
+.status {
+  font-weight: bold;
+  padding: 6px 12px;
+  border-radius: 5px;
+  text-transform: capitalize;
+  font-size: 15px;
+  margin-bottom: 15px;
+}
+
+/* Pending - Yellow */
+.status.pending {
+  background: rgb(255, 243, 181);
+  color: rgb(194, 121, 13);
+}
+
+/* Rejected - Red */
+.status.rejected {
+  background: rgb(255, 204, 204);
+  color: red;
+}
+
+/* Accepted - Green */
+.status.accepted {
+  background: rgb(204, 255, 204);
+  color: green;
+}
+
+/* Button */
+.mycars-btn {
+  background: rgb(182, 13, 50);
+  color: white;
+  padding: 12px 15px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  width: 100%;
+  text-align: center;
+  margin-top: 10px;
+  transition: background 0.3s ease-in-out;
+}
+
+.mycars-btn:hover {
+  background: darkred;
+}
+
+/* Responsive for smaller screens */
+@media (max-width: 1100px) {
+  .mycars-card {
+    width: 300px; /* Slightly smaller cards for medium screens */
+  }
+}
+
+@media (max-width: 900px) {
+  .mycars-container {
+    justify-content: space-around;
+  }
+
+  .mycars-card {
+    width: 100%; /* Full width cards for smaller screens */
+  }
+}
