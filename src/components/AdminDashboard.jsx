@@ -1,12 +1,16 @@
-import React from "react";
+
+import { Outlet } from "react-router-dom";
+import Sidebar from "../Pages/Sidebar";
 
 const AdminDashboard = () => {
-    return (
-        <div>
-            <h2>Admin Dashboard</h2>
-            <p>Welcome, Admin! You can manage cars here.</p>
-        </div>
-    );
+  return (
+    <div className="dashboard-container">
+      <Sidebar />
+      <div className="main-content">
+        <Outlet />  {/* This will load Home or ManageListing */}
+      </div>
+    </div>
+  );
 };
 
 export default AdminDashboard;

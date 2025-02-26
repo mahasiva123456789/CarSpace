@@ -53,7 +53,7 @@
     color: #0D6EFD;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 7vh;
-    margin-bottom: 15px;
+    margin-bottom: 25px;
    
 }
 .loginsignup-left span{
@@ -74,7 +74,7 @@
     z-index: 2;
     transition: all 0.3s ease-in-out; /* Smooth animation */
 }
-.button-group{
+/* .button-group{
     display: flex;
     margin-bottom: 40px;
     background-color:#F8F9FA;
@@ -95,8 +95,33 @@
     border-radius: 5px;
     cursor: pointer;
     transition: background 0.3s ease-in-out;
-}
-
+} */
+.search-toggles {
+    display: flex;
+    justify-content: space-between;
+    background: #f0ecec;
+    padding: 8px;
+    border-radius: 25px;
+    margin-bottom: 30px;
+  }
+  
+  .search-toggles button {
+    flex: 1;
+    border: none;
+    padding: 10px;
+    background: none;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 20px;
+    transition: 0.3s;
+  }
+  
+  .search-toggles .active {
+    background: #DC3545;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    color: #FFFFFF;
+  }
+  
 .loginsignup-left form {
     display: flex;
     flex-direction: column;
@@ -126,4 +151,7 @@
     color: red;
     text-align: center;
     font-size: 14px;
+}
+.error-message{
+    margin-top: 10px;
 }

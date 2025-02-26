@@ -14,7 +14,7 @@ header {
   }
   
   /* Logo */
-  h1 {
+  .header h1 {
     color: white;
     font-size: 1.25rem;
     font-weight: bold;
@@ -74,7 +74,7 @@ header {
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
   }
   
-  img {
+  .profile-img {
     width: 40px;
     height: 40px;
     border-radius: 50%;

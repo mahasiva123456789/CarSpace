@@ -154,7 +154,7 @@
     cursor: pointer;
 }
 
-.search-button {
+.search-button1 {
     background-color: #e63946;
     color: white;
     padding: 12px;
@@ -255,19 +255,20 @@
         padding: 10px;
     }
 }
-.slider-container {
+.sliders-container {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 8px;
+    /* height: 2px;  */
     /* width: 100%; */
 }
 
-.slider {
+.sliders {
     -webkit-appearance: none;
     appearance: none;
-    /* width: 100%;
-    height: 3px; */
+    width: 100%;
+     height: 1px; 
     border-radius: 10px;
     outline: none;
     cursor: pointer;
@@ -275,7 +276,7 @@
 }
 
 /* For WebKit Browsers */
-.slider::-webkit-slider-thumb {
+.sliders::-webkit-slider-thumb {
     -webkit-appearance: none;
     appearance: none;
     width: 20px;
@@ -294,5 +295,4 @@
     border-radius: 50%;
     cursor: pointer;
 }
-
-
+/* Traditional CSS for Vehicle Category UI */
